@@ -1,0 +1,58 @@
+# =====================================================
+# Archivos sensibles - NO SUBIR AL REPOSITORIO
+# =====================================================
+
+# Variables de entorno
+.env
+.env.*
+env
+
+# Base de datos - archivos SQL
+*.sql
+
+# Archivos ZIP / comprimidos
+*.zip
+*.tar.gz
+*.rar
+
+# Configuración SFTP (contiene credenciales del servidor)
+sftp-config.json
+
+# =====================================================
+# Dependencias (se instalan con composer install)
+# =====================================================
+vendor/
+
+# =====================================================
+# Archivos de escritura / caché / logs (TODOS los subdirectorios)
+# =====================================================
+**/writable/cache/*
+**/writable/logs/*
+**/writable/session/*
+**/writable/uploads/*
+**/writable/debugbar/*
+
+# Conservar estructura de directorios
+!**/writable/cache/.gitkeep
+!**/writable/logs/.gitkeep
+!**/writable/session/.gitkeep
+!**/writable/uploads/.gitkeep
+
+# =====================================================
+# Archivos del sistema y editores
+# =====================================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# =====================================================
+# Archivos de desarrollo
+# =====================================================
+phpunit.xml.dist
+
+# Carpeta de archivos subidos
+files/
